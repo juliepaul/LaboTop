@@ -152,19 +152,19 @@ $(function() {
 
     //autocomplete
     $("#espece").autocomplete({
-        source: "scripts/search.php",
+        source: "./../scripts/search.php",
     });
 
     $("#nom").autocomplete({
-        source: "scripts/nom.php",
+        source: "./../scripts/nom.php",
     });
 
     $("#formegal").autocomplete({
-        source: "scripts/formgal.php",
+        source: "./../scripts/formgal.php",
     });
 
     $("#Id_exp").autocomplete({
-        source: "scripts/Id_exp.php",
+        source: "./../scripts/Id_exp.php",
     });
 });
 </script>

@@ -2,7 +2,7 @@
 session_start();
 include("./../scripts/connexion_BD.php"); //connexion à la base de données
 if(!isset($_SESSION['LOGIN'])){
-  header('Location: index.php'); //si on ne rentre pas de pseudo, ni le mot de passe correspondant,
+  header('Location: ./../index.php'); //si on ne rentre pas de pseudo, ni le mot de passe correspondant,
 }                                //alors on ne peut pas accéder à la page de l'intranet
                                 // redirection vers la page index (page qui permet de se connecter)
  ?>
@@ -31,7 +31,7 @@ if(!isset($_SESSION['LOGIN'])){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="intranet.php">LaboTop</a>
+      <a class="navbar-brand" href="./../intranet.php">LaboTop</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
