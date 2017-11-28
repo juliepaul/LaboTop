@@ -5,7 +5,7 @@ $mysqli = new mysqli(MYHOST, MYUSER, MYPASS, DBNAME);
 
 if (isset($_GET['term'])){
   $searchTerm = $_GET['term'];
-  $query = $mysqli->query("SELECT Distinct Espece FROM animaux WHERE Espece LIKE   '%".$searchTerm."%'");
+  $query = $mysqli->query("SELECT DISTINCT Espece FROM animaux WHERE Espece LIKE   '%".$searchTerm."%'");
   while ($row = $query->fetch_assoc()) {
         $data[] = $row['Espece'];
     }

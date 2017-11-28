@@ -5,7 +5,7 @@ $mysqli = new mysqli(MYHOST, MYUSER, MYPASS, DBNAME);
 
 if (isset($_GET['term'])){
   $searchTerm = $_GET['term'];
-  $query = $mysqli->query("SELECT Id_exp FROM experimentateur WHERE Id_exp LIKE   '%".$searchTerm."%'");
+  $query = $mysqli->query("SELECT DISTINCT Id_exp FROM experimentateur WHERE Id_exp LIKE   '%".$searchTerm."%'");
   while ($row = $query->fetch_assoc()) {
         $data[] = $row['Id_exp'];
     }
